@@ -28,8 +28,6 @@ order by ProductName
 
 SELECT OD.OrderId, C.CompanyName, E.LastName
 FROM [Order] as O
-JOIN OrderDetail as OD
-on OD.OrderId = O.id
 JOIN Customer as C
 on O.CustomerId = C.Id
 JOIN Employee as E
